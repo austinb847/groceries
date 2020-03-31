@@ -21,9 +21,9 @@ $(document).ready(function() {
       return item.toUpperCase();
     });
     
-    uppercaseItems.forEach(function(item) {
-      $("ul").append("<li>" + item + "</li>");
-    });
+    for(index = 0; index < uppercaseItems.length; index ++) {
+      $("ul").append("<li>" + uppercaseItems[index] + "</li>");
+    }
     
     event.preventDefault();
   });
